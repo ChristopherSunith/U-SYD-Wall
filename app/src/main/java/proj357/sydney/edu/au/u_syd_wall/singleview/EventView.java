@@ -1,7 +1,11 @@
 package proj357.sydney.edu.au.u_syd_wall.singleview;
 
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -17,6 +21,7 @@ import android.widget.Toast;
 import proj357.sydney.edu.au.u_syd_wall.MainActivity;
 import proj357.sydney.edu.au.u_syd_wall.R;
 import proj357.sydney.edu.au.u_syd_wall.fragments.EventsFragment;
+
 import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -29,14 +34,14 @@ import static android.widget.Toast.LENGTH_LONG;
 
 public class EventView extends ActionBarActivity {
 
-    public String admin = "Aravind Raj C";
-    TextView clubname , eventname, desc, date, venue, views, time,cont;
-    private String clubnames,evntname,descs,dates,venuest,time_st,obje,con;
+    public String admin = "Samson Jabin D";
+    TextView clubname, eventname, desc, date, venue, views, time, cont;
+    private String clubnames, evntname, descs, dates, venuest, time_st, obje, con;
     private Integer viewss;
     private Toolbar mToolbar;
 
-    /**@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+
+    /*public boolean onCreateOptionsMenu(Menu menu) {
         String uname = ParseUser.getCurrentUser().getUsername().toString();
 
         if (uname.equals(admin)){
@@ -56,7 +61,7 @@ public class EventView extends ActionBarActivity {
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(EventView.this, "jbnbn",LENGTH_LONG);
+                Toast.makeText(EventView.this, "jbnbn", LENGTH_LONG);
             }
         });
         Intent i = getIntent();
@@ -65,7 +70,7 @@ public class EventView extends ActionBarActivity {
         descs = i.getStringExtra("content");
         dates = i.getStringExtra("date");
         venuest = i.getStringExtra("venue");
-        viewss = i.getIntExtra("views",0);
+        viewss = i.getIntExtra("views", 0);
         obje = i.getStringExtra("obj");
         time_st = i.getStringExtra("time");
         con = i.getStringExtra("con");
@@ -110,14 +115,25 @@ public class EventView extends ActionBarActivity {
         desc.setText(evntname);
         date.setText(dates);
         venue.setText(venuest);
-        views.setText(viewss.toString()+" views");
+        views.setText(viewss.toString() + " views");
         time.setText(time_st);
         cont.setText(cont.getText().toString());
         cont.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
                 Intent phoneIntent = new Intent(Intent.ACTION_CALL);
-                phoneIntent.setData(Uri.parse("tel:"+cont.getText().toString()));
+                phoneIntent.setData(Uri.parse("tel:" + cont.getText().toString()));
+                if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    Activity#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for Activity#requestPermissions for more details.
+                    return;
+                }
                 startActivity(phoneIntent);
             }
         });
