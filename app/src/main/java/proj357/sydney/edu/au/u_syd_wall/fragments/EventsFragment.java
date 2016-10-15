@@ -29,13 +29,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by AravindRaj on 26-03-2015.
- */
+
 public class EventsFragment extends Fragment {
 
     public String pcu;
-    public String admin = "Aravind Raj C";
+    public String admin = "Samson Jabin D";
     ListView listview;
     List<ParseObject> ob;
     ProgressDialog mProgressDialog;

@@ -26,9 +26,7 @@ import java.util.List;
 
 
 
-/**
- * Created by AravindRaj on 05-04-2015.
- */
+
 public class NewsComment extends ActionBarActivity {
 
 

@@ -29,9 +29,7 @@ import proj357.sydney.edu.au.u_syd_wall.R;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
-/**
- * Created by AravindRaj on 26-03-2015.
- */
+
 public class NewsFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     ListView listview;

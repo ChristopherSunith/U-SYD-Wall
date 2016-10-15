@@ -8,9 +8,7 @@ import android.widget.TextView;
 
 import proj357.sydney.edu.au.u_syd_wall.R;
 
-/**
- * Created by AravindRaj on 17-04-2015.
- */
+
 public class ArticlesView extends ActionBarActivity {
     TextView title,author,article,timestamp;
     String content,title_st,time,author_st;

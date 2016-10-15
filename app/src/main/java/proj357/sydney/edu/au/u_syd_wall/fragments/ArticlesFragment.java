@@ -31,9 +31,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by AravindRaj on 26-03-2015.
- */
 public class ArticlesFragment extends Fragment {
 
     ListView listview;

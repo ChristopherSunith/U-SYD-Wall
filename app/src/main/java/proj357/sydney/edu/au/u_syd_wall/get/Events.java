@@ -3,9 +3,7 @@ package proj357.sydney.edu.au.u_syd_wall.get;
 
 import com.parse.ParseFile;
 
-/**
- * Created by AravindRaj on 05-04-2015.
- */
+
 public class Events {
 
     private String eventname,obj,format,date,venue,desc,time;

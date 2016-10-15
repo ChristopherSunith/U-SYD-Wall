@@ -3,9 +3,7 @@ package proj357.sydney.edu.au.u_syd_wall.NavigationDrawer;
 
 import android.graphics.drawable.Drawable;
 
-/**
- * Created by poliveira on 24/10/2014.
- */
+
 public class NavigationItem {
     private String mText;
     private Drawable mDrawable;

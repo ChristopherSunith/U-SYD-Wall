@@ -2,9 +2,7 @@ package proj357.sydney.edu.au.u_syd_wall.get;
 
 import com.parse.ParseFile;
 
-/**
- * Created by AravindRaj on 05-04-2015.
- */
+
 public class Comment {
 
     private String comment;

@@ -18,9 +18,7 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
-/**
- * Created by AravindRaj on 04-05-2015.
- */
+
 public class NewPost extends ActionBarActivity {
 
     EditText con;

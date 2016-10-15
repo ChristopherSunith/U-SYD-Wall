@@ -16,9 +16,7 @@ import proj357.sydney.edu.au.u_syd_wall.singleview.EventView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by AravindRaj on 16-04-2015.
- */
+
 public class ArticlesListAdapter extends BaseAdapter {
 
     Context mContext;

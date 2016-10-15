@@ -17,9 +17,6 @@ import proj357.sydney.edu.au.u_syd_wall.singleview.PostView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by AravindRaj on 31-03-2015.
- */
 public class PostListAdapter extends BaseAdapter {
 
 

@@ -2,9 +2,7 @@ package proj357.sydney.edu.au.u_syd_wall.get;
 
 import com.parse.ParseFile;
 
-/**
- * Created by AravindRaj on 15-04-2015.
- */
+
 public class Articles {
 
     private String uname,article,title,timestamp,obj;

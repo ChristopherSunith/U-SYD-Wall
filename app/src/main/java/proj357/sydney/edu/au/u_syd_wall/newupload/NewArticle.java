@@ -22,9 +22,7 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
-/**
- * Created by AravindRaj on 15-04-2015.
- */
+
 public class NewArticle extends ActionBarActivity {
     EditText title, content;
     Button post;

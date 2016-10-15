@@ -1,8 +1,6 @@
 package proj357.sydney.edu.au.u_syd_wall.singleview;
 
-/**
- * Created by AravindRaj on 18-03-2015.
- */
+
 
 import proj357.sydney.edu.au.u_syd_wall.MainActivity;
 import proj357.sydney.edu.au.u_syd_wall.comment.NewsComment;

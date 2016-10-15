@@ -2,9 +2,6 @@ package proj357.sydney.edu.au.u_syd_wall.get;
 
 import com.parse.ParseFile;
 
-/**
- * Created by AravindRaj on 18-03-2015.
- */
 
 public class News {
     private String content;

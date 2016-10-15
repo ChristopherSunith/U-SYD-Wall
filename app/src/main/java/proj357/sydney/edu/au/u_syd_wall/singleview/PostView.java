@@ -9,9 +9,7 @@ import android.widget.TextView;
 
 import proj357.sydney.edu.au.u_syd_wall.R;
 
-/**
- * Created by AravindRaj on 31-03-2015.
- */
+
 public class PostView extends ActionBarActivity {
     TextView content_tv;
     TextView username_tv;
